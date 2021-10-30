@@ -1,0 +1,97 @@
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Website about No Future and yoga">
+  <meta name="keywords" content="yoga, NoFuture, programming, knitting, iceland, AshtangaYoga, Ashtanga Vinyasa Yoga, Ashtanga Yoga">
+  <meta name="author" content="Ewa Dwornik">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Future</title>
+
+  {# stylesheets #}
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/static/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+  <link rel="shortcut icon" type="image/png" href="{% static '/favicon.png' %}" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<body>
+  <header id="main-header">
+    <section class="main-menu">
+      <div class="navigation-bar">
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
+        <a href="/yoga">Yoga</a>
+        <a href="/shop">Shop</a>
+        <a href="/music">Music</a>
+        <a href="/calculator">Calculator</a>
+        <a href="/programming">Programming</a>
+        <a href="/knitting">
+          <span style='color:#FF0000;'>K</span>
+          <span style='color:#DF001F;'>n</span>
+          <span style='color:#BF003F;'>i</span>
+          <span style='color:#9F005F;'>t</span>
+          <span style='color:#7F007F;'>t</span>
+          <span style='color:#5F009F;'>i</span>
+          <span style='color:#3F00BF;'>n</span>
+          <span style='color:#1F00DF;'>g</span>
+        </a>
+        <a class="blink" href="/game">
+          <span id="NoFuture">Welcome to No Future!!!</span>
+          <span id="ItIsGame">!!! It is a game !!!</span>
+        </a>
+      </div>
+
+
+      <div class="dropdown">
+        <button data-toggle="dropdown">
+          <img class="decoration" src="/static/menu.png">
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/">Home</a>
+          <a class="dropdown-item" href="/contact">Contact</a>
+          <a class="dropdown-item" href="/yoga">Yoga</a>
+          <a class="dropdown-item" href="/shop">Shop</a>
+          <a class="dropdown-item" href="/music">Music</a>
+          <a class="dropdown-item" href="/calculator">Calculator</a>
+          <a class="dropdown-item" href="/programming">Programming</a>
+          <a class="dropdown-item" href="/knitting">Knitting</a>
+
+        </div>
+      </div>
+
+
+
+
+      </div>
+    </section>
+
+
+
+  </header>
+
+
+  {% block content %}
+  {% endblock %}
+
+  <footer>
+    <center>May The Force Be With You</center>
+  </footer>
+
+  <!-- jQuery, Popper.js & Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
