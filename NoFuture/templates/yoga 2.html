@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="carousel-yoga">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/static/background2.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/background3.png" alt="Second slide">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section class="yoga-text">
+  <h3>My practice</h3>
+
+  I believe in the system of Ashtanga Vinyasa Yoga.
+  I do my practice 5, 6 times a week, mostly at 6:00 AM. Sometimes it’s hard, sometimes it’s easy, but I
+  do it anyway.
+  It is part of my daily routine. Ashtanga has a very strict of rules at its core,
+  and if sometimes I don’t follow them all, I always go back to it for its reliability.
+
+  I’ve practiced with few well-known, experienced teachers
+  and also with a couple of less famous, but nonetheless knowledgeable ones.
+  I’ve been to India three times, but to be honest I’ve learnt the most by being alone on my own mat,
+  and applying regularly what I learnt in these journeys.
+</section>
+
+<section class="yoga-photos">
+  <table>
+    <td><img src="/static/rishikesh.jpg"></td>
+    <td><img src="/static/certificate.jpg"></td>
+    <td><img src="/static/Terminator.png"></td>
+  </table>
+</section>
+
+<section class="yoga-text">
+  <h3>I am a yoga teacher</h3>
+  This is one of the fruits of my first trip to India, to Rishikesh - the world capital
+  of yoga.
+  I've gotten way more than this document, but fortunately we, as humanity, haven't started giving
+  diplomas for that ;)
+</section>
+
+<section class="yoga-video">
+  <div>
+    <video autoplay>
+      <source src="/static/lift.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+<section class="yoga-cards">
+  <table>
+    <td>
+
+      <img src="/static/between.jpeg" />
+
+
+    </td>
+    <td>
+      <img src="/static/shala2.jpg" />
+      <h5>Yoga at Yoga Shala Reykjavik</h5>
+      Sunday, Skeifan 7<br>
+      Time: 10:29 - 12:01.<br><br>
+
+      <h5>1-1,5h private class</h5>
+      Single class: 8000 ISK<br><br>
+
+      <h5>Yoga at your work place</h5>
+      1 hour long relaxing yoga class.<br>
+      Single class: 11 000 ISK<br>
+    </td>
+    <td>
+      <img src="/static/yoga-jurtaapotek.jpg" />
+
+    </td>
+  </table>
+
+</section>
+
+
+{% endblock %}
