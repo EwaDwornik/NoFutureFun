@@ -12,6 +12,7 @@ $(document).ready(function(){
     interval: 2000
   });
 
+
   $('#easy, #medium, #hard, #superhard').on('click', function (e){
 
     var el = $(e.currentTarget);
@@ -22,6 +23,10 @@ $(document).ready(function(){
     var randomhard =  Math.floor((Math.random() * 751) + 251);
     var randomsuperhard =  Math.floor((Math.random() * 1551) + 751);
 
+    $('#easy').attr("disabled", true);
+    $('#medium').attr("disabled", true);
+    $('#hard').attr("disabled", true);
+    $('#superhard').attr("disabled", true);
 
     if(action =="easy"){
       console.log("easy")
@@ -57,13 +62,19 @@ $(document).ready(function(){
       var number = randomsuperhard
 
     }
+
+
   $('#yesorno').css('display', 'block');
 
   $('#yes, #no').on('click', function (e){
 
+
     var el = $(e.currentTarget);
     var action = el.attr('id');
     var score = 0;
+
+    $('#yes').attr("disabled", true);
+    $('#no').attr("disabled", true);
 
     if (number == 2) {
         if(action =="yes"){
@@ -133,8 +144,11 @@ $(document).ready(function(){
         				}
         }
 }
+$('#again').css('display', 'block');
+
 
   });
-  });
+
+});
 
 });

@@ -309,3 +309,9 @@ text-align: center;
 #yesorno {
   display: none;
 }
+
+#again {
+  display: none;
+  text-align: center;
+  margin: auto;
+}

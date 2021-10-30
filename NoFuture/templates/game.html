@@ -8,6 +8,9 @@
   <li>Super hard level - 7 points</li><br>
   I you won't answer within 5 seconds you loose 5 points.<br><br>
 </section>
+
+
+
 <section class="game">
 
   <button id="easy">Easy</button>
@@ -25,4 +28,19 @@
   <span id="result"></span><br>
   <span id="score">Your score is: </span>
 </section>
+
+<div id="again">
+  <button id="againbutton">Next round!</button>
+</div>
+
 {% endblock %}
+
+
+
+<section class="game-new">
+  <button id="startbtn" onclick="startGame()">Start</button><br>
+  <div id="timeDisplay" hidden>Time left: 60</div>
+
+  <div id="operation">operation</div>
+
+</section>
