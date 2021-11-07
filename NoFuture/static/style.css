@@ -9,6 +9,8 @@
     width: 100%;
   }
 
+
+
 footer {
   position: fixed;
   padding: 10px 10px 0px 10px;
@@ -98,57 +100,8 @@ body {
   display: inline;
 }
 
-.dropdown img{
-  margin-right: 20px;
-  margin-top:20px;
-  width: 70px;
-  float: right;
-}
 
-.dropdown {
-  list-style: none;
-  float: right;
-  background: #F9F9F9;
-  border: none;
-  margin-right: 30px;
-}
-
-.dropdown button {
-  padding: 0;
-  border: none;
-  background: #F9F9F9;
-}
-
-
-.dropdown-menu {
-  position: absolute;
-  background-color: #F9F9F9;
-  margin-right: 30px;
-  width: 250px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.7);
-  border-radius: 20px 20px 20px 20px;
-
-
-}
-
-.dropdown-menu a {
-  height: 30px;
-  background-color: #F9F9F9
-  border: none;
-  margin: 10px;
-}
-
-.dropdown-menu a:hover {
-  text-decoration: none;
-  color: black;
-  width: 1px;
-  padding-left: 1px;
-  }
-
-#cards-home, #cards-contact {
+#cards-home {
   width: auto;
   margin-bottom: 50px;
   display: flex;
@@ -204,7 +157,7 @@ img{
   transition: box-shadow 500ms;
 }
 
-.contact-table, .music-table {
+.contact, .music-table {
   margin-left: auto;
   margin-right: auto;
   border-collapse: separate;
@@ -214,12 +167,12 @@ img{
 
 }
 
-.contact-table td, .music-table td {
+.contact td, .music-table td {
   padding: 10px;
   width: 50%;
 }
 
-.contact-table img {
+.contact img {
   margin: 20px;
   margin-bottom: 100px;
   width: 480px;

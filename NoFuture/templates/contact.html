@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load user_agents %}
 
+{% if request|is_pc or request|is_tablet %}
 
 <section>
-  <table class="contact-table">
+  <table class="contact">
     <tr>
       <td>
         <img src="/static/contact.jpg">
@@ -25,6 +27,26 @@
     </tr>
   </table>
 </section>
+{% endif %}
+
+{% if request|is_mobile %}
+<section class="contact">
+  <img src="/static/contact.jpg"><br /><br />
+  Ewa Dwornik
+  <a href="mailto:nofutureyoga@gmail.com">nofutureyoga@gmail.com</a><br />
+  +354 7837141 <br />
+  <a href='https://www.facebook.com/nofutureyoga' target="_blank">My Facebook</a> <br />
+  <a href='https://www.instagram.com/nofuture.yoga/' target="_blank">My Instagram</a>
+
+
+
+</section>
+
+
+
+
+{% endif %}
+
 
 
 {% endblock %}

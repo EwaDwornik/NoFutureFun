@@ -28,4 +28,5 @@ urlpatterns = [
     path('programming/', views.ProgrammingView.as_view(), name="programming"),
     path('knitting/', views.KnittingView.as_view(), name="knitting"),
     path('game/', views.GameView.as_view(), name="knitting"),
+
 ]

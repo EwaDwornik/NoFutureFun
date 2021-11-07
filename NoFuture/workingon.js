@@ -164,5 +164,5 @@ function nextQuestion(){
         }
 
 }
-  });$('#again').css('display', 'block');
+  });
   });
