@@ -3,10 +3,10 @@
 <section class="primes">
   <form action="" method="POST">
     {% csrf_token %}
-    <h3>Show all prime numbers between 2 numbers:</h3><br />
-    Number 3 needs to be smaller than 10001.
+    <h4>Show all prime numbers between 2 numbers:</h4><br />
+    Difference between two numbers can not be higher than 10001
     <br><br>
-    {{ form3.as_p }}
+    {{ form.as_p }}
     <button type="submit">Let's do that!</button>
     <br />
     <p class="answer">{{ lst }}</p>

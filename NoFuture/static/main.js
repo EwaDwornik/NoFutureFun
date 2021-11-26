@@ -4,14 +4,11 @@ console.log("Why are you reading this?");
 
 $(document).ready(function(){
 
+  
+
   $('#explanation').click(function(){
     alert("Prime numbers are whole numbers greater than 1, that have only two factors – 1 and the number itself.")
   });
-
-  $('.carousel').carousel({
-    interval: 2000
-  });
-
 
   $('#easy, #medium, #hard, #superhard').on('click', function (e){
 

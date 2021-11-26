@@ -142,7 +142,6 @@ body {
   width: auto;
   max-width: 480px;
   margin: 30px;
-  margin-top: 30px;
   padding: 20px;
   float: right;
 }
@@ -162,23 +161,21 @@ img{
   transition: box-shadow 500ms;
 }
 
-.contact, .music-table {
+.contact, .music, .programming {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   border-collapse: separate;
   border-spacing: 50px 0;
   line-height: 3.0;
-  margin-top: 10px;
 
 }
 
-.contact td, .music-table td {
-  padding: 10px;
+.contact td, .music td, .programming td {
   width: 50%;
 }
 
-.contact img {
-  margin: 20px;
+.contact img, .programming img {
   width: 400px;
   float: right;
 }
@@ -198,22 +195,26 @@ img{
 
 
 
-.music-table iframe {
+.music iframe {
   float: right;
-  width: 840px;
-  height: 472px;
+  width: 613px;
+  height: 345px;
   border-radius: 0px 30px 0px 30px;
 
 }
-.yoga-text, .knitting-text{
-margin: 50px;
-line-height: 4.0;
-text-align: center;
+.yoga-text, .knitting-text, .programming-text{
+  line-height: 4.0;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.programming-text{
+  margin-bottom: 50px;
+}
+
 
 .yoga-photos td{
   width: 33.33%;
-  height: 480px;
   border: none!important;
 }
 
@@ -239,6 +240,9 @@ text-align: center;
   margin-bottom: 50px;
 }
 
+.shop td{
+  width: 50%;
+}
 
 
 .primes {
@@ -265,7 +269,7 @@ text-align: center;
 .knitting-gallery p {
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 20px;
+  height: 40px;
 }
 
 .game {
@@ -277,7 +281,6 @@ text-align: center;
   margin: auto;
   width: 50%;
 }
-
 
 #yesorno {
   display: none;

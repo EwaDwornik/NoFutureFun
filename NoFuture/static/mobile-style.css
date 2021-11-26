@@ -4,13 +4,24 @@
 body {
   background-color: #F9F9F9 !important;
   font-family: 'Press Start 2P', cursive !important;
-  margin-left: 2px !important;
-  margin-right: 2px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255,255,255,0.5);
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 20px;
 }
 
 img{
   width: 100%;
-  padding: 2px;
   border-radius: 0px 30px 0px 30px;
   transition: box-shadow 500ms;
 }
@@ -115,7 +126,7 @@ img{
 
 
 #cards-home {
-  margin-top: 10px;
+  margin-top: 130px;
   width: auto;
   margin-bottom: 50px;
   display: flex;
@@ -127,13 +138,9 @@ img{
   color: #000000;
   }
 
-.row div:first-of-type {
-  margin-top: 110px;
-}
-
 .photos-front {
   max-width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -145,13 +152,83 @@ img{
   box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.7);
 }
 
-.contact,  {
-  margin: 110px 10px 10px 30px;
+.contact, .programming {
+  margin-top: 130px;
+  margin-bottom: 50px;
   text-align: center;
-  font-size: 15px;
   line-height: 2.0
 }
 
 .carousel-yoga {
-  margin: 110px 10px 10px 30px;
+  margin-top: 130px;
+}
+
+.programming-text{
+  line-height: 2.0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.yoga-photos td{
+  width: 33.33%;
+  border: none!important;
+}
+
+.yoga-text {
+  line-height: 2.0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.yoga-video div{
+  text-align: center;
+}
+
+.yoga-video video, .yoga-photos img{
+  border-radius: 0px 30px 0px 30px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.yoga-cards td{
+  width: 50%;
+}
+
+.yoga-cards img {
+  margin-bottom: 50px;
+}
+
+.yoga-cards {
+  text-align: center;
+}
+
+.music{
+  margin-top: 130px;
+  text-align: center;
+
+}
+
+.music iframe {
+  float: right;
+  width: 100%;
+  height: 345px;
+  border-radius: 0px 30px 0px 30px;
+  margin-bottom: 50px;
+}
+
+.primes {
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+
+.primes button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.knitting-text {
+  margin-top: 130px;
+  line-height: 2.0;
+  text-align: center;
 }

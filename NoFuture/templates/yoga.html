@@ -26,7 +26,7 @@
 <section class="yoga-text">
 
   I believe in the system of Ashtanga Vinyasa Yoga.
-  I do my practice 5, 6 times a week, mostly at 6:00 AM. Sometimes it’s hard, sometimes it’s easy, but I
+  I do my practice mostly at 6:00 AM. Sometimes it’s hard, sometimes it’s easy, but I
   do it anyway.
   It is part of my daily routine. Ashtanga has a very strict of rules at its core,
   and if sometimes I don’t follow them all, I always go back to it for its reliability.
@@ -46,7 +46,8 @@
 </section>
 
 <section class="yoga-text">
-  I am a yoga teacher.<br>
+  <br>
+  <h5>I am a yoga teacher.</h5><br>
   This is one of the fruits of my first trip to India, to Rishikesh - the world capital
   of yoga.
   I've gotten way more than this document, but fortunately we, as humanity, haven't started giving
@@ -60,7 +61,9 @@
     </video>
   </div>
 </section>
+{% load user_agents %}
 
+{% if request|is_pc or request|is_tablet %}
 <section class="yoga-cards">
   <table>
     <td>
@@ -76,8 +79,31 @@
         Single class: 8000 ISK<br><br><br>
 
         <h6>Yoga at your work place</h6>
-        1 hour long relaxing yoga class.<br>
+        1 hour long yoga class.<br>
         Single class: 11 000 ISK<br>
+    </td>
+    <td>
+      <img src="/static/yoga-jurtaapotek.jpg" />
+    </td>
+  </table>
+</section>
+{% endif %}
+
+{% if request|is_mobile %}
+<section class="yoga-cards">
+  <h6>Yoga Shala Reykjavik</h6>
+  Sunday, Skeifan 7<br>
+  Time: 10:29 - 12:01.<br><br><br>
+
+  <h6>1-1,5h private class</h6>
+  Single class: 8000 ISK<br><br><br>
+
+  <h6>Yoga at your work place</h6>
+  1 hour long yoga class.<br>
+  Single class: 11 000 ISK<br><br>
+  <table>
+    <td>
+      <img src="/static/between.jpeg" />
     </td>
     <td>
       <img src="/static/yoga-jurtaapotek.jpg" />
@@ -85,6 +111,7 @@
   </table>
 
 </section>
+{% endif %}
 
 
 {% endblock %}

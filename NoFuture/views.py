@@ -45,10 +45,15 @@ class ContactView(TemplateView):
 
 class YogaView(TemplateView):
     """
-    Front page, showing what you can do on this website.
+    Teaching and practicing yoga, description.
     """
     template_name = 'yoga.html'
 
+class ShopView(TemplateView):
+    """
+    link to an external website plus a galleruy of selling products.
+    """
+    template_name = 'shop.html'
 
 class MusicView(TemplateView):
     template_name = 'music.html'
@@ -60,15 +65,15 @@ class Primes2View(View):
     """
 
     def get(self, request, *args, **kwargs):
-        form3 = Primes2Form()
-        context = {'form3': form3}
+        form = Primes2Form()
+        context = {'form': form}
         return render(request, 'primes2.html', context)
 
     def post(self, request, *args, **kwargs):
-        form3 = Primes2Form(data=request.POST)
-        if form3.is_valid():
-            number2 = form3.cleaned_data['number2']
-            number3 = form3.cleaned_data['number3']
+        form = Primes2Form(data=request.POST)
+        if form.is_valid():
+            number2 = form.cleaned_data['number2']
+            number3 = form.cleaned_data['number3']
             lst = []
             for num in range(number2, number3 + 1):
                 if num > 1:
@@ -80,15 +85,15 @@ class Primes2View(View):
 
             return render(request,
                           'primes2.html',
-                          {"number2": number2,
+                          {"number2": number2 ,
                            "number3": number3,
                            "lst": lst,
-                           'form3': form3},
+                           'form': form},
                           )
         else:
             return render(request,
                           'primes2.html',
-                          {'form3': form3}, )
+                          {'form': form}, )
 
 
 class ProgrammingView(TemplateView):
