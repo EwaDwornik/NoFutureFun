@@ -244,6 +244,11 @@ img{
   width: 50%;
 }
 
+#safety {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .primes {
   text-align: center;

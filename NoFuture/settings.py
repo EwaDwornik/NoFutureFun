@@ -25,7 +25,7 @@ SECRET_KEY = 'b!e##-1p7_n%#u^2$7dn16(v-)z*+ux22dx)w#!yqs3gwc0$bw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+ALLOWED_HOSTS = ["*"]
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 # Application definition
 
