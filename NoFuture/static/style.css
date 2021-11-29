@@ -276,18 +276,19 @@ img{
   text-align: center;
 }
 
-.rules {
+.rules, .game {
   text-align: center;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 50%;
 }
 
-#yesorno {
-  display: none;
+#result, #divisors, #leveltype {
+  margin: 20px;
 }
-
-#again {
+#again, #yesorno {
   display: none;
   text-align: center;
-  margin: auto;
+  margin: 20px;
 }

@@ -1,17 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-<section class="rules">
-  You need to guess if a number is prime or not. You can gain or loose a following amount of points, if you answer correctly or not. You have only one minute. Use your time wisely.<br><br>
-  <li>Easy level - 1 points</li>
-  <li>Medium level - 3 points</li>
-  <li>Hard level - 5 points</li>
-  <li>Super hard level - 7 points</li><br>
-  I you won't answer within 5 seconds you loose 5 points.<br><br>
-</section>
-
-
 
 <section class="game">
+  Guess if a number is prime or not. <br>
+  It's just fun, nothing more than that.<br><br>
+  <button type="button" id="explanation">What is a prime Number?</button><br><br>
 
   <button id="easy">Easy</button>
   <button id="medium">Medium</button>
@@ -21,26 +14,22 @@
   <div id="leveltype">
     What do you choose?
   </div>
+
   <div id="yesorno">
     <button id="yes">Yes</button>
     <button id="no">No</button>
   </div>
+
   <span id="result"></span><br>
-  <span id="score">Your score is: </span>
+
+  <span id="divisors"></span><br>
+
+  <div id="again">
+    <button onClick="window.location.reload();">Try again</button>
+  </div>
+
 </section>
 
-<div id="again">
-  <button id="againbutton">Next round!</button>
-</div>
+
 
 {% endblock %}
-
-
-
-<section class="game-new">
-  <button id="startbtn" onclick="startGame()">Start</button><br>
-  <div id="timeDisplay" hidden>Time left: 60</div>
-
-  <div id="operation">operation</div>
-
-</section>

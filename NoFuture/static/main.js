@@ -4,7 +4,7 @@ console.log("Why are you reading this?");
 
 $(document).ready(function(){
 
-  
+
 
   $('#explanation').click(function(){
     alert("Prime numbers are whole numbers greater than 1, that have only two factors – 1 and the number itself.")
@@ -15,7 +15,7 @@ $(document).ready(function(){
     var el = $(e.currentTarget);
     var action = el.attr('id');
 
-    var randomeasy =  Math.floor((Math.random() * 3) + 1);
+    var randomeasy =  Math.floor((Math.random() * 51) + 1);
     var randommedium =  Math.floor((Math.random() * 251) + 51);
     var randomhard =  Math.floor((Math.random() * 751) + 251);
     var randomsuperhard =  Math.floor((Math.random() * 1551) + 751);
@@ -68,7 +68,6 @@ $(document).ready(function(){
 
     var el = $(e.currentTarget);
     var action = el.attr('id');
-    var score = 0;
 
     $('#yes').attr("disabled", true);
     $('#no').attr("disabled", true);
@@ -76,23 +75,20 @@ $(document).ready(function(){
     if (number == 2) {
         if(action =="yes"){
            $("#result").html("You are right, it is a prime number!");
-           score +=1;
-           console.log(score)
+
         }else if(action == "no"){
-           $("#result").html("You are wrong, it is a prime number");
-           score -=1;
-           console.log(score)
+           $("#result").html("You are wrong, it is a prime number!");
+
+
         }
     }else if(number == 1) {
         if(action =="yes"){
            $("#result").html("You are wrong, it is not a prime number!");
-           score -=1;
-           console.log(score)
+
 
         }else if(action == "no"){
-           $("#result").html("You are right, it is not a prime number");
-           score +=1;
-           console.log(score)
+           $("#result").html("You are right, it is not a prime number!");
+
         }
     }
 
@@ -101,33 +97,26 @@ $(document).ready(function(){
                if(action=="yes"){
 
                  if(number > 3 && number < 51){
-                   score -=1;
-                   console.log(score)
+
                  }else if(number > 51 && number < 251){
-                   score -=3;
-                   console.log(score)
 
                  }else if(number > 251 && number < 751){
-                   score -=5;
-                   console.log(score)
+
                  }else if(number > 751 && number < 1551){
-                   score -=7;
+
                  }
-                 $("#result").html("You are wrong, it is not a prime number");
+                 $("#result").html("You are wrong, it is not a prime number!");
 
               }else if (action =="no") {
                   if(number > 3 && number < 51){
-                    score +=1;
-                    console.log(score)
+
                   }else if(number > 51 && number < 251){
-                    score +=3;
-                    console.log(score)
+
 
                   }else if(number > 251 && number < 751){
-                    score +=5;
-                    console.log(score)
+
                   }else if(number > 751 && number < 1551){
-                    score +=7;
+
                   }
 
                  $("#result").html("You are right, it is not a prime number!");
@@ -137,11 +126,45 @@ $(document).ready(function(){
               if(action =="yes"){
                 $("#result").html("You are right, it is a prime number!");
               }else if(action == "no"){
-                $("#result").html("You are wrong, it is a prime number");
+                $("#result").html("You are wrong, it is a prime number!");
         				}
         }
 }
+
+function calculate(number) {
+
+    var half = Math.floor(number / 2),
+        str = '1',
+        i, j;
+
+    number % 2 === 0 ? (i = 2, j = 1) : (i = 3, j = 2);
+
+    for (i; i <= half; i += j) {
+        number % i === 0 ? str += ',' + i : false;
+    }
+
+    str += ',' + number;
+    console.log(str);
+    $('#divisors').html("<br>Divisors: ")
+    $('#divisors').append(str)
+
+
+}
+
+calculate(number);
+
 $('#again').css('display', 'block');
+
+$('#again').click(function(){
+    $('#easy').attr("disabled", false);
+    $('#medium').attr("disabled", false);
+    $('#hard').attr("disabled", false);
+    $('#superhard').attr("disabled", false);
+
+    $('#yes').attr("disabled", false);
+    $('#no').attr("disabled", false);
+
+})
 
 
   });

@@ -1,57 +1,25 @@
-
-let timeLeft = 60;
-let timerInterval;
-function startGame()
-{
-
-  nextQuestion();
-
-  document.getElementById("startbtn").disabled = true;
-
-  let timeDisplay = document.getElementById("timeDisplay");
-  timeDisplay.hidden = false;
-  timerInterval = setInterval(function(){
-    timeLeft -=1;
-    timeDisplay.innerHTML = "Time left:" + timeLeft;
-    if (timeLeft ==0){
-      clearInterval(timerInterval);
-    }
-  }, 1000)
-}
-
-function nextQuestion(){
+console.log("Why are you reading this?");
 
 
-}
+
+$(document).ready(function(){
+
+
+
+  $('#explanation').click(function(){
+    alert("Prime numbers are whole numbers greater than 1, that have only two factors – 1 and the number itself.")
+  });
 
   $('#easy, #medium, #hard, #superhard').on('click', function (e){
 
     var el = $(e.currentTarget);
     var action = el.attr('id');
 
-    var randomeasy =  Math.floor((Math.random() * 3) + 1);
+    var randomeasy =  Math.floor((Math.random() * 51) + 1);
     var randommedium =  Math.floor((Math.random() * 251) + 51);
     var randomhard =  Math.floor((Math.random() * 751) + 251);
     var randomsuperhard =  Math.floor((Math.random() * 1551) + 751);
 
-    let timeLeft = 60;
-    let timerInterval;
-    function startGame()
-    {
-
-      nextQuestion();
-
-      document.getElementById("startbtn").disabled = true;
-
-      let timeDisplay = document.getElementById("timeDisplay");
-      timeDisplay.hidden = false;
-      timerInterval = setInterval(function(){
-        timeLeft -=1;
-        timeDisplay.innerHTML = "Time left:" + timeLeft;
-        if (timeLeft ==0){
-          clearInterval(timerInterval);
-        }
-      }, 1000)
 
     if(action =="easy"){
       console.log("easy")
@@ -87,13 +55,16 @@ function nextQuestion(){
       var number = randomsuperhard
 
     }
+
+
   $('#yesorno').css('display', 'block');
 
   $('#yes, #no').on('click', function (e){
 
+
     var el = $(e.currentTarget);
     var action = el.attr('id');
-    var score = 0;
+
 
     if (number == 2) {
         if(action =="yes"){
@@ -162,7 +133,11 @@ function nextQuestion(){
                 $("#result").html("You are wrong, it is a prime number");
         				}
         }
-
 }
+
+
   });
-  });
+
+});
+
+});
