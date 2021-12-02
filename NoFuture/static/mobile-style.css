@@ -80,7 +80,6 @@ img{
   max-height: 0;
   transition: max-height .2s ease-out;
   margin-bottom: 100px;
-  padding-bottom: 50px;
 }
 
 .header-mobile .menu-icon {
@@ -97,7 +96,7 @@ img{
 }
 
 .header-mobile .menu-btn:checked ~ .menu {
-  max-height: 770px;
+  max-height: 870px;
 }
 
 
@@ -224,10 +223,10 @@ img{
 .shop td {
   width: 50%;
 }
+
 .primes {
   text-align: center;
-  margin-top: 160px;
-  margin-bottom: 50px;
+  margin: 50px;
 }
 
 .primes button {
@@ -235,8 +234,36 @@ img{
   padding: 5px;
 }
 
+
 .knitting-text {
   margin-top: 130px;
   line-height: 2.0;
   text-align: center;
+}
+
+
+.game {
+  text-align: center;
+}
+
+.game button {
+  margin: 10px;
+
+}
+
+.rules, .game {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+#result, #divisors, #leveltype {
+  margin: 20px;
+}
+#again, #yesorno {
+  display: none;
+  text-align: center;
+  margin: 20px;
 }
