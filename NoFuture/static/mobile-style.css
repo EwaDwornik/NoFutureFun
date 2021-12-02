@@ -6,6 +6,8 @@ body {
   font-family: 'Press Start 2P', cursive !important;
   margin-left: 10px !important;
   margin-right: 10px !important;
+  margin-bottom: 60px;
+  margin-top: 120px;
 }
 
 footer {
@@ -13,7 +15,7 @@ footer {
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: auto;
   background: rgba(255,255,255,0.5);
   color: black;
   font-family: 'Press Start 2P', cursive;
@@ -67,15 +69,16 @@ img{
   float: left;
   margin-top: 20px;
   color: black;
-  font-size: 2em;
-  padding: 10px 20px;
+  font-size: 1.5em;
+  padding: 10px;
   text-decoration: none;
 }
 
 .header-mobile .menu {
   clear: both;
-  max-height: 0;
+  height: 560;
   transition: max-height .2s ease-out;
+  line-height: 7px;
 }
 
 .header-mobile .menu-icon {
@@ -214,6 +217,10 @@ img{
   height: 345px;
   border-radius: 0px 30px 0px 30px;
   margin-bottom: 50px;
+}
+
+.shop td {
+  width: 50%;
 }
 
 .primes {
