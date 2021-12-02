@@ -76,9 +76,9 @@ img{
 
 .header-mobile .menu {
   clear: both;
-  height: 560;
+  line-height: 10px;
+  max-height: 0;
   transition: max-height .2s ease-out;
-  line-height: 7px;
 }
 
 .header-mobile .menu-icon {
@@ -222,7 +222,6 @@ img{
 .shop td {
   width: 50%;
 }
-
 .primes {
   text-align: center;
   margin-top: 160px;
