@@ -79,6 +79,8 @@ img{
   line-height: 10px;
   max-height: 0;
   transition: max-height .2s ease-out;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .header-mobile .menu-icon {
