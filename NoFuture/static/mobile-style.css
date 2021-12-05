@@ -7,7 +7,8 @@ body {
   margin-left: 10px !important;
   margin-right: 10px !important;
   margin-bottom: 60px;
-  margin-top: 120px;
+  margin-top: 200px;
+  text-align: center;
 }
 
 footer {
@@ -60,7 +61,6 @@ img{
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
   color: black;
-  text-align: center;
 }
 
 
@@ -145,7 +145,6 @@ img{
 .photos-front {
   max-width: 100%;
   margin-bottom: 50px;
-  text-align: center;
 }
 
 .photos-front img{
@@ -163,13 +162,8 @@ img{
   line-height: 2.0
 }
 
-.carousel-yoga {
-  margin-top: 130px;
-}
-
 .programming-text{
   line-height: 2.0;
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -180,7 +174,6 @@ img{
 
 .yoga-text {
   line-height: 2.0;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -202,13 +195,12 @@ img{
   margin-bottom: 50px;
 }
 
-.yoga-cards {
-  text-align: center;
+.yoga-cards div {
+  margin: 30px;
 }
 
 .music{
   margin-top: 130px;
-  text-align: center;
 
 }
 
@@ -224,46 +216,33 @@ img{
   width: 50%;
 }
 
-.primes {
-  text-align: center;
-  margin: 50px;
-}
-
-.primes button {
+.primes button, .game button {
   margin: 5px;
   padding: 5px;
+  width: 200px;
+  border-radius: 10px 10px 10px 10px;
 }
 
+#id_number2, #id_number3, #explanation, #again button {
+  width: 200px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#result, #divisors, #leveltype, #explanation {
+  margin: 20px;
+}
+
+#yes, #no {
+  width: 25%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#again, #yesorno {
+  display: none;
+  margin: 20px;
+}
 
 .knitting-text {
   margin-top: 130px;
   line-height: 2.0;
-  text-align: center;
-}
-
-
-.game {
-  text-align: center;
-}
-
-.game button {
-  margin: 10px;
-
-}
-
-.rules, .game {
-  text-align: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 50%;
-}
-
-#result, #divisors, #leveltype {
-  margin: 20px;
-}
-#again, #yesorno {
-  display: none;
-  text-align: center;
-  margin: 20px;
 }

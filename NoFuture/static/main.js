@@ -1,9 +1,35 @@
 console.log("Why are you reading this?");
 
 
-
 $(document).ready(function(){
 
+
+
+  TweenMax.set("#arrow",{xPercent:-50, yPercent:-50,  transformOrigin:"center"});
+
+  var motionPath = MorphSVGPlugin.pathDataToBezier('#line', {align:"#arrow"}) ;
+
+  var Intro = new TimelineMax({repeat:3, repeatDelay:1})
+  .from("#line", 4, {drawSVG:"0%", ease:Linear.easeNone})
+  .to('#arrow', 4, {bezier:{values:motionPath, type:"cubic", autoRotate:true}, ease:Linear.easeNone},0)
+  .to('#arrow',0.1,{fill:'green',stroke:'green',repeat:3});
+    var xwing = function($xwing,speed){
+    var beeWidth = $xwing.width();
+
+$xwing.animate({ //animates the bee to the right side of the screen
+    "left": "100%"
+}, speed, function(){ //when finished it goes back to the left side
+    $xwing.animate({
+        "left": 0 - beeWidth + "px"
+    }, speed, function(){
+        xwing($xwing, speed) //finally it recalls the same function and everything starts again
+    });
+});
+};
+
+$(function(){ //document ready
+    xwing($("#xwing"), 1000); //calls the function
+});
 
 
   $('#explanation').click(function(){
@@ -19,6 +45,19 @@ $(document).ready(function(){
     var randommedium =  Math.floor((Math.random() * 251) + 51);
     var randomhard =  Math.floor((Math.random() * 751) + 251);
     var randomsuperhard =  Math.floor((Math.random() * 1551) + 751);
+
+    if (randommedium % 2 == 0){
+      randommedium +=1
+    }
+
+    if (randomhard % 2 == 0){
+      randomhard +=1
+    }
+
+    if (randomsuperhard % 2 == 0){
+      randomsuperhard +=1
+    }
+
 
     $('#easy').attr("disabled", true);
     $('#medium').attr("disabled", true);

@@ -4,14 +4,16 @@
   <form action="" method="POST">
     {% csrf_token %}
     <h4>Show all prime numbers between 2 numbers:</h4><br />
-    Difference between two numbers can not be higher than 10001
+    Numbers can not be higher than 10001!<br>
+    <button type="button" id="explanation">What is a prime Number?</button>
+
     <br><br>
     {{ form.as_p }}
-    <button type="submit">Let's do that!</button>
+    <button type="submit" id="lets">Check</button>
     <br />
     <p class="answer">{{ lst }}</p>
   </form>
-  <button type="button" id="explanation">What is a prime Number?</button>
+
 
 
 </section>
