@@ -3,18 +3,8 @@ console.log("Why are you reading this?");
 
 $(document).ready(function(){
 
-
-
-  TweenMax.set("#arrow",{xPercent:-50, yPercent:-50,  transformOrigin:"center"});
-
-  var motionPath = MorphSVGPlugin.pathDataToBezier('#line', {align:"#arrow"}) ;
-
-  var Intro = new TimelineMax({repeat:3, repeatDelay:1})
-  .from("#line", 4, {drawSVG:"0%", ease:Linear.easeNone})
-  .to('#arrow', 4, {bezier:{values:motionPath, type:"cubic", autoRotate:true}, ease:Linear.easeNone},0)
-  .to('#arrow',0.1,{fill:'green',stroke:'green',repeat:3});
-    var xwing = function($xwing,speed){
-    var beeWidth = $xwing.width();
+var xwing = function($xwing,speed){
+var beeWidth = $xwing.width();
 
 $xwing.animate({ //animates the bee to the right side of the screen
     "left": "100%"
