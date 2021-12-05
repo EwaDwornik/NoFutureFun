@@ -7,6 +7,10 @@
     font-family: 'Press Start 2P', cursive;
     border-bottom: 2px solid;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    color: black;
+    top: 0px;
   }
 
 
@@ -27,6 +31,7 @@ body {
   background-color: #F9F9F9 !important;
   font-family: 'Press Start 2P', cursive !important;
   line-height: 2.0 !important;
+  margin-top: 100px;
   margin-left: 20px !important;
   margin-right: 20px !important;
   font-size: 13px !important;
@@ -353,6 +358,10 @@ img{
 
 .game {
   text-align: center;
+}
+
+.knitting-gallery {
+  margin-bottom: 50px;
 }
 
 .rules, .game {
