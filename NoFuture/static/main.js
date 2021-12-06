@@ -3,23 +3,6 @@ console.log("Why are you reading this?");
 
 $(document).ready(function(){
 
-var xwing = function($xwing,speed){
-var beeWidth = $xwing.width();
-
-$xwing.animate({ //animates the bee to the right side of the screen
-    "left": "100%"
-}, speed, function(){ //when finished it goes back to the left side
-    $xwing.animate({
-        "left": 0 - beeWidth + "px"
-    }, speed, function(){
-        xwing($xwing, speed) //finally it recalls the same function and everything starts again
-    });
-});
-};
-
-$(function(){ //document ready
-    xwing($("#xwing"), 1000); //calls the function
-});
 
 
   $('#explanation').click(function(){
