@@ -1,2 +1,3 @@
 # NoFutureFun
-My website, that I use as a portfolio.
+My very first website. I made it to practice what I have learnt so far. 
+I also use it as a portfolio. 
