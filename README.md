@@ -1,3 +1,3 @@
 # NoFutureFun
-My very first website. I made it to practice what I have learnt so far. 
-I also use it as a portfolio. 
+My very first website made in Django. I made it mainly to practice CSS, HTML, Django forms and a little bit of JavaScript. 
+This project made my realise, that I am more interested in frontend. 
